@@ -2,9 +2,9 @@
 write-up by: muetho
 
 ## day 01: 5th anniversary
+> *time to have a look back*
 
 ### description
-> *time to have a look back*
 
 | DOWNLOADS (FILES / LINKS)                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------|
@@ -22,10 +22,9 @@ write-up by: muetho
 * Nugget this year: 	__HV17-5YRS-4evr-IJHy-oXP1-c6Lw__
 
 ## day 02: Wishlist
-
-### description
 > *The fifth power of two*
 
+### description
 > Something happened to my wishlist, please help me.
 
 | DOWNLOADS (FILES / LINKS)                                                                                                 |
@@ -41,10 +40,9 @@ write-up by: muetho
 * Nugget: __HV17-Th3F-1fth-Pow3-r0f2-is32__
 
 ## day 03: Strange Logcat Entry
-
-### description
 > *Lost in messages*
 
+### description
 >  I found those strange entries in my Android logcat, but I don't know what it's all about... I just want to read my messages!
 
 | DOWNLOADS (FILES / LINKS)                                                                                                 |
@@ -64,7 +62,7 @@ write-up by: muetho
 ## day 04: HoHoHo
 
 ### description
-> Santa has hidden something for you here
+> *Santa has hidden something for you here*
 
 | DOWNLOADS (FILES / LINKS)                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------|
@@ -135,7 +133,7 @@ write-up by: muetho
 * Nugget: __HV17-eCFw-J4xX-buy3-8pzG-kd3M__
 
 ## day 07: i know...
-> ... what you did last xmas
+> *... what you did last xmas*
 
 ### description
 > We were able to steal a file from santas computer. We are sure, he prepared a gift and there are traces for it in this file. Please help us to recover it:
@@ -155,7 +153,7 @@ write-up by: muetho
 * Nugget: __HV17-Ucyz-0yEU-d90O-vSqS-Sd64__
 
 ## day 08: True 1337s
-> ...can read this instantly
+> *...can read this instantly*
 
 ### description
 > I found this obfuscated code on a public FTP-Server. But I don't understand what it's doing...
@@ -222,7 +220,7 @@ if C=="1787569":FUN(''.join(chr(ord(a) ^ ord(b)) for a,b in zip("{<some non-ASCI
 * Nugget: __HV17-Ip11-9CaB-JvCf-d5Nq-ffyi__
 
 ## day 10: Just play the game
-> Haven't you ever been bored at school?
+> *Haven't you ever been bored at school?*
 
 ### description
 > Santa is in trouble. He's elves are busy playing TicTacToe. Beat them and help Sata to save christmas!
@@ -286,7 +284,7 @@ a = c / (b mod p) = 4992494753833549810712236291668866917857080843252592097248
 * Nugget: __HV17-zQBz-AwDg-1FEL-rUE9-Gkgq__
 
 ## day 12: giftlogistics
-> countercomplete inmeasure
+> *countercomplete inmeasure*
 
 ### description
 > Most passwords of Santa GiftLogistics were stolen. You find an example of the traffic for Santa's account with password and everything. The Elves CSIRT Team detected this and made sure that everyone changed their password.
@@ -305,7 +303,7 @@ a = c / (b mod p) = 4992494753833549810712236291668866917857080843252592097248
 * (missing -.-)
 
 ## day 13: muffin\_asm
-> As M. said, kind of a different architecture!
+> *As M. said, kind of a different architecture!*
 
 ### description
 > How about some custom asm to obsfucate the codez?
