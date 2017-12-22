@@ -1,13 +1,21 @@
 # HACKvent 2017
 write-up by: muetho
 
-## hidden 1 
-* Try to access https://hackvent.hacking-lab.com/challenge.php?day=1984
-* Message says: “The resource you are trying to access, is hidden in the header.”
-* Enable ZAP Proxy, resend the GET request to day 1984 and readout flag in response header
-* Nugget: __HV17-4llw-aysL-00ki-nTh3-H34d__
-
 ## day 1
+| CHALLENGE DESCRIPTION                                                                                                     |
+|---------------------------------------------------------------------------------------------------------------------------|
+| 5th anniversary - time to have a look back                                                                                |
+
+| DOWNLOADS (FILES / LINKS)                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------|
+| [HV17-hv16-hv-15-hv14.svg](day01/HV17-hv16-hv15-hv14.svg)                                                                 |
+
+| HINTS                                                                                                                     |
+|---------------------------------------------------------------------------------------------------------------------------|
+| -                                                                                                                         |
+
+### solution
+
 * went to https://github.com/shiltemann/CTF-writeups-public and get write up from past years HACKvent to get the specific nuggets needed
 * 2014-12-01 Nugget: 	HV24-BAAJ-6ZtK-__IJHy__-bABB-YoMw
 * 2015-12-01 Nugget: 	HV15-Tz9K-4JIJ-EowK-__oXP1__-NUYL
@@ -153,3 +161,9 @@ m = power_mod(c,d,n) = 0x485631372d35424d752d6d6744302d473753752d455973702d4d673
 * Nugget: __HV17-5BMu-mgD0-G7Su-Eysp-Mg0b__
 
 ## day 15
+
+## hidden 1 
+* Try to access https://hackvent.hacking-lab.com/challenge.php?day=1984
+* Message says: “The resource you are trying to access, is hidden in the header.”
+* Enable ZAP Proxy, resend the GET request to day 1984 and readout flag in response header
+* Nugget: __HV17-4llw-aysL-00ki-nTh3-H34d__
