@@ -114,7 +114,7 @@ write-up by: muetho
 ### solution
 
 * Given flags are CRC32 checksums of the actual ASCII flags
-* Brute force CRC32 calculation with [day05/crc32\_brute\_force.c](day05/crc32_brute_force.)
+* Brute force CRC32 calculation with [day05/crc32\_brute\_force.c](day05/crc32_brute_force.c)
 * Nugget: __HV17-7pKs-whyz-o6wF-h4rp-Qlt6__
 
 ## day 06: Santa's journey
@@ -381,5 +381,5 @@ m = power_mod(c,d,n) = 0x485631372d35424d752d6d6744302d473753752d455973702d4d673
 ----------------------------------------------------------------------------------------------------------------------------------
 
 I could not solve anymore daily (or hidden) challenges. I hacked around (and also learned) a lot, but could not retrieve the flags.
-> Maybe I should have try harder!
+> Maybe I should have tried harder!
 
