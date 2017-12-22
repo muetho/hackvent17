@@ -1,14 +1,14 @@
 # HACKvent 2017
 write-up by: muetho
 
-## day 1
+## day 01: 5th anniversary
 
 ### description
-> 5th anniversary - time to have a look back
+> *time to have a look back*
 
 | DOWNLOADS (FILES / LINKS)                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------|
-| [HV17-hv16-hv-15-hv14.svg](day01/HV17-hv16-hv15-hv14.svg)                                                                 |                                                                                                               
+| [HV17-hv16-hv-15-hv14.svg](day01/HV17-hv16-hv15-hv14.svg)                                                                 | 
 
 ### hints
 > \-
@@ -21,15 +21,44 @@ write-up by: muetho
 * 2016-12-01 Nugget: 	HV16-t8Kd-38aY-QxL5-bn4K-__c6Lw__
 * Nugget this year: 	__HV17-5YRS-4evr-IJHy-oXP1-c6Lw__
 
-## day 2
+## day 02: Wishlist
+
+### description
+> *The fifth power of two*
+> Something happened to my wishlist, please help me.
+
+| DOWNLOADS (FILES / LINKS)                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------|
+| [Wishlist](day02/wishlist.txt)                                                                                            | 
+
+### hints
+> \-
+
+### solution
+
 * base64 - -decode 32 times on wishlist.txt
 * Nugget: __HV17-Th3F-1fth-Pow3-r0f2-is32__
 
-## day 3
+## day 03: Strange Logcat Entry
+
+### description
+> *Lost in messages*
+>  I found those strange entries in my Android logcat, but I don't know what it's all about... I just want to read my messages!
+
+| DOWNLOADS (FILES / LINKS)                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------|
+| [logcat](day03/logcat.txt)                                                                                            | 
+
+### hints
+> \-
+
+### solution
+
 * DEBUG message in logcat.txt line 2681 says: Failed to send raw PDU message
 * Searched for raw PDU string: logcat.txt line 2749: 07914400000000F001000B913173317331F300003AC7F79B0C52BEC52190F37D07D1C3EB32888E2E838CECF05907425A63B7161D1D9BB7D2F337BB459E8FD12D188CDD6E85CFE931
 * decoded with online SMS PDU Decode/Encode: https://www.diafaan.com/sms-tutorials/gsm-modem-tutorial/online-sms-pdu-decoder/
 * Message payload: “Good Job! Now take the Flag: __HV17-th1s-isol-dsch-00lm-agic”__
+
 ## day 4
 * PDF ‘HoHoHo\_medium.pdf’ contains attachment ‘DroidSans-HACKvent.sfd’
 * Open .sfd file in FontForge (downloaded via apt-get install fontforge)
