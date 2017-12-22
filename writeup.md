@@ -24,15 +24,15 @@ write-up by: muetho
 * decoded with online SMS PDU Decode/Encode: https://www.diafaan.com/sms-tutorials/gsm-modem-tutorial/online-sms-pdu-decoder/
 * Message payload: “Good Job! Now take the Flag: __HV17-th1s-isol-dsch-00lm-agic”__
 ## day 4
-* PDF ‘HoHoHo_medium.pdf’ contains attachment ‘DroidSans-HACKvent.sfd’
+* PDF ‘HoHoHo\_medium.pdf’ contains attachment ‘DroidSans-HACKvent.sfd’
 * Open .sfd file in FontForge (downloaded via apt-get install fontforge)
-* Choose File>Generate Fonts and generate (ignore all warnings)
+* Choose File > Generate Fonts and generate (ignore all warnings)
 * Open generated file ‘DroidSans-Regular.pfb’
 * Nugget can be readout starting at character 45: __HV17-RP7W-DU6t-Z3qA-jwBz-jItj__
 
 ## day 5
 * Given flags are CRC32 checksums of the actual ASCII flags
-* Brute force CRC32 calculation with crc32_brute_force.c (attachment)
+* Brute force CRC32 calculation with crc32\_brute\_force.c (attachment)
 * Nugget: __HV17-7pKs-whyz-o6wF-h4rp-Qlt6__
 
 ## day 6
@@ -95,16 +95,18 @@ if C=="1787569":FUN(''.join(chr(ord(a) ^ ord(b)) for a,b in zip("{<some non-ASCI
 * Automating strings passing via stdin: 
 ```
  perl -e 'print "\n7\n3\n9\n6\n" x 100' - | nc challenges.hackvent.hacking-lab.com 1037
- ```
+```
 * After 100 wins, the password is print to sdtout
 * Nugget: __HV17-y0ue-kn0w-7h4t-g4me-sure__
 
 ## day 11
-* using sagemath (online math cloud at www.cocalc.com), a python based math environment with builtin functions perfectly suitable for crypto (power_mod,…)
+* using sagemath (online math cloud at www.cocalc.com), a python based math environment with builtin functions perfectly suitable for crypto (power\_mod,…)
 ```
-c = (a*b) mod p -> (c mod p) = ((a mod p) * (b mod p)) mod p -> (c mod p) / (b mod p) = a mod p 
+c = (a\*b) mod p -> (c mod p) = ((a mod p) \* (b mod p)) mod p -> (c mod p) / (b mod p) = a mod p 
+
 ```
 * since c < p, a < p: 
+
 ```
 a = c / (b mod p) = 49924947538335498107122362916688669178570808432525920972483661185623270410 = 485631372d7a51427a2d417744672d3146454c2d725545392d474b67710016
 ```
@@ -114,7 +116,7 @@ a = c / (b mod p) = 4992494753833549810712236291668866917857080843252592097248
 ## day 12
 
 ## day 13
-* Download the file muffin_asm.py
+* Download the file muffin\_asm.py
 * Running it: Script waits for flag provided via stdin, providing the wrong flag returns “[-] nope” and terminates script
 * Analyzing the script: Different logic operations are defined (ADD,SUB,XOR,JE,CMP,…) collected in an instruction vector “ins”, the method “run” performs kind of an Arithmetic Logic Unit (ALU) on a provided bytecode. The bytecode is defined at the end of the file (codez)
 * Based on these findings it is clear that the characters of the flag needs to be stored somewhere within the bytecode and there must be a comparison of the provided flag via stdin and the hardcoded flag. 
@@ -125,7 +127,7 @@ a = c / (b mod p) = 4992494753833549810712236291668866917857080843252592097248
 * Nugget: __HV17-mUff!n-4sm-!s-cr4zY__
 
 ## day 14
-* Download the happy_cryptmas.zip and unpack → file hackvent
+* Download the happy\_cryptmas.zip and unpack → file hackvent
 * hexdump -C hackvent → this seems to be an exe binary
 * strings hackvent → stringing the hackvent file reveals (amongst other more or less meaningless strings) a 512 bit hex number and 65537, these could be the public modulus n and the public exponent e of an RSA encryption
 * the provided flag in the challenge description (also 512 bit) then should be the encrypted ciphertext c
