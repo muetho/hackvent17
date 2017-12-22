@@ -272,7 +272,7 @@ if C=="1787569":FUN(''.join(chr(ord(a) ^ ord(b)) for a,b in zip("{<some non-ASCI
 
 * using sagemath (online math cloud at www.cocalc.com), a python based math environment with builtin functions perfectly suitable for crypto (power\_mod,…)
 ```
-c = (a\*b) mod p -> (c mod p) = ((a mod p) \* (b mod p)) mod p -> (c mod p) / (b mod p) = a mod p 
+c = (a\*b) mod p -> (c mod p) = ((a mod p) * (b mod p)) mod p -> (c mod p) / (b mod p) = a mod p 
 
 ```
 * since c < p, a < p: 
@@ -351,7 +351,19 @@ a = c / (b mod p) = 4992494753833549810712236291668866917857080843252592097248
 c = m<sup>e</sup> mod n
 * RSA decryption: 
 m = c<sup>d</sup> mod n
-* relation between public exponent e and private exponent d:  where p and q are the primefactors of n: and (p-1)\*(q-1) denotes the euler phi function of n (number of elements that do not divide n): when both p and q are prime
+* relation between public exponent e and private exponent d:
+```
+d*e = 1 mod((p-1)*(q-1))
+```
+where p and q are the primefactors of n:
+```
+n = p*q
+```
+and (p-1)\*(q-1) denotes the euler phi function of n (number of elements that do not divide n): 
+```
+phi(n) = (p-1)*(q-1)
+```
+when both p and q are prime
 * to calculate the cleartext message m (which is presumably the flag) we need the private exponent d, which is the modular inverse of e and the prime factorization of n or the euler phi function of n (programming effort is equally for both)→ again using sagemath via online cloud cocalc.com
 * given:
 ```     
