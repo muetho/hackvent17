@@ -168,7 +168,7 @@ write-up by: muetho
 
 ### solution
 
-* Download file True.1337 → starts with exec() statements and contains multiple chr() statements. Find programming language containing these commands. PHP and Python are possible candidates, but the upper case keyword ‘True’ implies it’s Python (also the challenge was created by pyth0n33)
+* Download file True.1337: starts with exec() statements and contains multiple chr() statements. Find programming language containing these commands. PHP and Python are possible candidates, but the upper case keyword ‘True’ implies it’s Python (also the challenge was created by pyth0n33)
 * run script with python2.7 fails but prints the command within the first exec statement:
 ```
 A=chr;__1337=exec;SANTA=input;FUN=print
@@ -364,7 +364,8 @@ and (p-1)\*(q-1) denotes the euler phi function of n (number of elements that do
 phi(n) = (p-1)*(q-1)
 ```
 when both p and q are prime
-* to calculate the cleartext message m (which is presumably the flag) we need the private exponent d, which is the modular inverse of e and the prime factorization of n or the euler phi function of n (programming effort is equally for both)→ again using sagemath via online cloud cocalc.com
+* to calculate the cleartext message m (which is presumably the flag) we need the private exponent d, which is the modular inverse of e and the prime factorization of n or the euler phi function of n (programming effort is equally for both) 
+* again using sagemath via online cloud cocalc.com
 * given:
 ```     
 c = 0x7A9FDCA5BB061D0D638BE1442586F3488B536399BA05A14FCAE3F0A2E5F268F2F3142D1956769497AE677A12E4D44EC727E255B391005B9ADCF53B4A74FFC34C
